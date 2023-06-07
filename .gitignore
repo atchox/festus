@@ -1,0 +1,8 @@
+.vscode
+.DS_*
+
+.env*
+
+node_modules
+
+*.lock

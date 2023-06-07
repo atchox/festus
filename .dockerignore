@@ -1,0 +1,8 @@
+.git*
+.vscode
+.DS_*
+
+.env*
+*.yml
+
+node_modules
