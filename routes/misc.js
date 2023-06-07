@@ -4,7 +4,7 @@ router.get("/", (req, res) => {
   res.send("Festus is too awesome!")
 })
 
-router.get("/creators", (req, res) => {
+router.get("/creator", (req, res) => {
   res.json({
     name: "Atreya Choudhury",
     email: "atreyachoudhury@hotmail.com",
