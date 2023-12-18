@@ -1,4 +1,4 @@
-const client = require("./client")
+const client = require("./build_client")
 const whook = require("./whook")
 
 client.login(process.env.BOT_TOKEN)

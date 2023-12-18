@@ -4,5 +4,6 @@
 
 .env*
 *.yml
+watched.json
 
 node_modules

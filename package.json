@@ -11,14 +11,16 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "dotenv": "^16.1.4",
-    "eslint": "^8.42.0",
-    "nodemon": "^2.0.22"
+    "dotenv": "^16.3.1",
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "discord.js": "^14.11.0",
-    "express": "^4.18.2"
+    "cron": "^3.1.6",
+    "discord.js": "^14.14.1",
+    "express": "^4.18.2",
+    "node-html-parser": "^6.1.11"
   },
   "scripts": {
     "register": "node -r dotenv/config deployCommands.js",

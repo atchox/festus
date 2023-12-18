@@ -1,6 +1,5 @@
 .vscode
 .DS_*
-
 .env*
-
+watched.json
 node_modules
