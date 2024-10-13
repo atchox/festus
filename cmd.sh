@@ -1,4 +1,4 @@
 #!/bin/sh
 
-node deployCommands.js
-node index.js
+pnpm nodeRegister
+pnpm nodeStart

@@ -3,7 +3,14 @@
 .DS_*
 
 .env*
-*.yml
-watched.json
+*.md
+Dockerfile
+
+.eslintcache
+.eslintrc.*
+
+.prettierrc.*
+.dockerignore
 
 node_modules
+build

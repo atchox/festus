@@ -1,21 +1,16 @@
-FROM node:18-alpine
-
+FROM node:22-alpine AS base
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 WORKDIR /app
+COPY package.json pnpm-lock.yaml ./
 
-ARG NODE_ENV=production
-ENV NODE_ENV $NODE_ENV
+FROM base AS prod-deps
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
 
-COPY package.json yarn.lock ./
-RUN \
-  yarn install && \
-  yarn cache clean --all
-
+FROM base
+COPY --from=prod-deps /app/node_modules /app/node_modules
 COPY . .
 
-RUN \
-  chmod +x *.sh && \
-  chown -R node:node ./
-
-USER node
-
+RUN chmod +x *.sh
 CMD ["./cmd.sh"]

@@ -10,20 +10,22 @@
   },
   "license": "MIT",
   "private": true,
-  "devDependencies": {
-    "dotenv": "^16.3.1",
-    "eslint": "^8.56.0",
-    "nodemon": "^3.0.2"
-  },
   "dependencies": {
     "cors": "^2.8.5",
-    "cron": "^3.1.6",
-    "discord.js": "^14.14.1",
-    "express": "^4.18.2",
-    "node-html-parser": "^6.1.11"
+    "cron": "^3.1.7",
+    "discord.js": "^14.16.3",
+    "express": "^4.21.1",
+    "node-html-parser": "^6.1.13"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "nodemon": "^3.1.7"
   },
   "scripts": {
-    "register": "node -r dotenv/config deployCommands.js",
-    "start": "nodemon -r dotenv/config ."
-  }
+    "register": "node --env-file .env deployCommands.js",
+    "nodeRegister": "node deployCommands.js",
+    "start": "nodemon --env-file .env .",
+    "nodeStart": "node index.js"
+  },
+  "packageManager": "pnpm@9.12.1"
 }
