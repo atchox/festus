@@ -12,14 +12,14 @@
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
-    "cron": "^3.1.7",
-    "discord.js": "^14.16.3",
-    "express": "^4.21.1",
-    "node-html-parser": "^6.1.13"
+    "cron": "^3.3.2",
+    "discord.js": "^14.17.2",
+    "express": "^4.21.2",
+    "node-html-parser": "^7.0.1"
   },
   "devDependencies": {
-    "eslint": "^9.12.0",
-    "nodemon": "^3.1.7"
+    "eslint": "^9.17.0",
+    "nodemon": "^3.1.9"
   },
   "scripts": {
     "register": "node --env-file .env deployCommands.js",
@@ -27,5 +27,5 @@
     "start": "nodemon --env-file .env .",
     "nodeStart": "node index.js"
   },
-  "packageManager": "pnpm@9.12.1"
+  "packageManager": "pnpm@9.15.3"
 }
