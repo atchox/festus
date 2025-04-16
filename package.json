@@ -12,13 +12,13 @@
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
-    "cron": "^3.5.0",
-    "discord.js": "^14.17.3",
-    "express": "^4.21.2",
+    "cron": "^4.3.0",
+    "discord.js": "^14.18.0",
+    "express": "^5.1.0",
     "node-html-parser": "^7.0.1"
   },
   "devDependencies": {
-    "eslint": "^9.19.0",
+    "eslint": "^9.24.0",
     "nodemon": "^3.1.9"
   },
   "scripts": {
@@ -27,5 +27,5 @@
     "start": "nodemon --env-file .env .",
     "nodeStart": "node index.js"
   },
-  "packageManager": "pnpm@10.2.0"
+  "packageManager": "pnpm@10.8.1"
 }
