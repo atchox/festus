@@ -29,7 +29,7 @@ const checkForUpdates = async () => {
       return
     }
     const old = JSON.parse(readFileSync(process.env.WATCHED_PATH, "utf8"))
-    count = 0
+    let count = 0
     arr.forEach(el => {
       if (!old.includes(el)) count += 1
     })
@@ -73,6 +73,7 @@ const job = new CronJob(
 
 async function execute(interaction) {
   const sub = interaction.options.getSubcommand()
+  let len = 0
   switch (sub) {
     case "start":
       job.start()
@@ -88,7 +89,6 @@ async function execute(interaction) {
       await interaction.reply(job.running ? "Active!" : "Offline :(")
       break
     case "count":
-      let len = 0
       if (existsSync(process.env.WATCHED_PATH)) {
         len = JSON.parse(readFileSync(process.env.WATCHED_PATH, "utf8")).length
       }

@@ -40,7 +40,7 @@ router.post("/reach", async (req, res) => {
       ]
     })
     return res.status(200).end()
-  } catch (err) {
+  } catch {
     res.status(500).end()
   }
 })

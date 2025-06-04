@@ -18,7 +18,11 @@
     "node-html-parser": "^7.0.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@eslint/json": "^0.12.0",
     "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.2.0",
     "nodemon": "^3.1.10"
   },
   "scripts": {
@@ -27,5 +31,5 @@
     "start": "nodemon --env-file .env .",
     "nodeStart": "node index.js"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.1"
 }
