@@ -1,9 +1,0 @@
-env:
-  es6: true
-  node: true
-extends:
-  - eslint:recommended
-  - google
-quotes: double
-rules:
-  semi: 0
