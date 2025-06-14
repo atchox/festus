@@ -1,7 +1,7 @@
 const router = require("express").Router()
 const client = require("../client")
 
-router.post("/reach", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const channel = await client.channels.fetch(
       `${process.env.REACH_CHANNEL_ID}`
@@ -45,4 +45,4 @@ router.post("/reach", async (req, res) => {
   }
 })
 
-module.exports = { subpath: "/", router: router }
+module.exports = { subpath: "/reach", router: router }
