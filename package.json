@@ -31,5 +31,5 @@
     "start": "nodemon --env-file .env .",
     "nodeStart": "node index.js"
   },
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.12.2"
 }
